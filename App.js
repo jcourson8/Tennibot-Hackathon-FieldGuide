@@ -3,17 +3,24 @@ import { Image, ImageBackground, Pressable, SafeAreaView, ScrollView, StyleSheet
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from "react-native-vector-icons/Entypo";
-
+import { SpotifyApiContext } from 'react-spotify-api';
+// import { Buffer } from "buffer";
 
 const Stack = createNativeStackNavigator();
 // Basic reusable components
-
-
 
 const GalleryCardContainer = (props) => (
   <View style={styles.tourCardContainer}>
     <ScrollView showsHorizontalScrollIndicator={false} >
       <View style={{height: 20}}></View> 
+      <View style={styles.musicCard}>
+        <View style={styles.musicCardInner}>
+          <Image source={require('./assets/f_1.jpeg')} />
+          <Image source={require('./assets/f_2.jpeg')} />
+          <Image source={require('./assets/f_3.jpeg')} />
+          <Image source={require('./assets/f_4.jpeg')} />
+        </View>
+        </View>
     </ScrollView>
   </View>
 );
@@ -39,8 +46,9 @@ const TourCardContainer = (props) => (
     <ScrollView showsHorizontalScrollIndicator={false} >
       <View style={{height: 20}}></View> 
       
-        {data.Tour.map((tour) => (
+        {data.Tour.map((tour, idx) => (
             <TourCard
+            key={idx}
               date={tour.date}
               facility={tour.facility}
               location={tour.location}
@@ -94,6 +102,11 @@ const styles = StyleSheet.create({
     width: 320,
     alignItems: 'flex-start',
   },
+  musicCardInner: {
+    // backgroundColor: 'blue',
+    width: 320,
+    resizeMode: 'contain',
+  },
   tourCardContainer: {
     height: 800,
     // backgroundColor: 'blue',
@@ -103,7 +116,8 @@ const styles = StyleSheet.create({
   },
   textTour: {
     color: "black",
-    fontSize: 12,
+    fontSize: 13,
+    lineHeight: 25,
     fontFamily: "Cochin",
     fontWeight: "bold",
     textAlign: "center",
@@ -179,6 +193,7 @@ const About = ({navigation}) => (
   <View style={styles.about}>
     <ImageBackground source={require('./assets/background_2.jpeg')} resizeMode="cover" style={styles.image}>
       <View style={{height: 70, width: 10}}></View>
+      <Text style={styles.text}>About</Text> 
       <Pressable onPress={() => navigation.navigate('HomeScreen')}> 
         <View style={styles.container_icon}>
           <Icon name="chevron-thin-left" style={styles.icon1}></Icon>
@@ -214,6 +229,7 @@ const Music = ({navigation}) => (
   <View style={styles.music}>
     <ImageBackground source={require('./assets/background_2.jpeg')} resizeMode="cover" style={styles.image}>
       <View style={{height: 70, width: 10}}></View>
+      <Text style={styles.text}>Music</Text> 
       <Pressable onPress={() => navigation.navigate('HomeScreen')}> 
         <View style={styles.container_icon}>
           <Icon name="chevron-thin-left" style={styles.icon1}></Icon>
@@ -229,6 +245,8 @@ const Gallery = ({navigation}) => (
   <View style={styles.gallery}>
     <ImageBackground source={require('./assets/background_2.jpeg')} resizeMode="cover" style={styles.image}>
       <View style={{height: 70, width: 10}}></View>
+
+      <Text style={styles.text}>Gallery</Text> 
       <Pressable onPress={() => navigation.navigate('HomeScreen')}> 
         <View style={styles.container_icon}>
           <Icon name="chevron-thin-left" style={styles.icon1}></Icon>
@@ -260,6 +278,13 @@ const App = () => (
 
 
 export default App;
+
+
+
+
+
+
+
 
 // "Fake" API data to use in your app
 const data = {

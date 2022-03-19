@@ -1,0 +1,70 @@
+{
+    "Tour":[
+      {
+        "date":"MAR 31 THU",
+        "facility":"Park Theatre (Supporting SYML) @ 8:00pm",
+        "location":"Winnipeg, MB, Canada",
+        "link":"https://bandsintown.com/e/103265758"
+      },
+      {
+        "date":"APR 1 FRI",
+        "facility":"Bella Concert Hall (Supporting SYML) @ 8:00pm",
+        "location":"Calgary, AB, Canada",
+        "link":"https://bandsintown.com/e/103265765"
+      },
+      {
+        "date":"APR 2 SAT",
+        "facility":"Festival Place (Supporting SYML) @ 8:00pm",
+        "location":"Sherwood Park, AB, Canada",
+        "link":"https://bandsintown.com/e/103265773"
+      },
+      {
+        "date":"APR 7 THU",
+        "facility":"Hollywood Theatre (Supporting SYML) @ 7:00pm",
+        "location":"Vancouver, BC, Canada",
+        "link":"https://bandsintown.com/e/103265781"
+      },
+      {
+        "date":"APR 8 FRI",
+        "facility":"Alix Goolden Hall (Supporting SYML) @ 8:00pm",
+        "location":"Victoria, BC, Canada",
+        "link":"https://bandsintown.com/e/103265786"
+      },
+      {
+        "date":"JUN 2 THU",
+        "facility":"Danforth Music Hall (Support for Wild Rivers) @ 7:00pm",
+        "location":"Toronto, ON, Canada",
+        "link":"https://bandsintown.com/e/103112706"
+      },
+      {
+        "date":"JUN 3 FRI",
+        "facility":"Club SAW (Support for Wild Rivers) @ 8:00pm",
+        "location":"Ottawa, ON, Canada",
+        "link":"https://bandsintown.com/e/103193445"
+      },
+      {
+        "date":"JUN 4 SAT",
+        "facility":"Club SAW (Support for Wild Rivers) @ 8:30pm",
+        "location":"Ottawa, ON, Canada",
+        "link":"https://bandsintown.com/e/103112716"
+      },
+      {
+        "date":"JUN 5 SUN",
+        "facility":"Petit Campus (Support for Wild Rivers) @ 8:00pm",
+        "location":"Montreal, QC, Canada",
+        "link":"https://bandsintown.com/e/103112718"
+      },
+      {
+        "date":"JUN 7 TUE",
+        "facility":"Higher Ground (Support for Wild Rivers) @ 8:00pm",
+        "location":"South Burlington, VT, United States",
+        "link":"https://bandsintown.com/e/1024464787"
+      },
+      {
+        "date":"JUN 8 WED",
+        "facility":"Buffalo Iron Works (Support for Wild Rivers) @ 7:00pm",
+        "location":"Buffalo, NY, United States",
+        "link":"https://bandsintown.com/e/103262728"
+      }
+    ]
+  }
